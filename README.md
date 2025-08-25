@@ -1,4 +1,4 @@
-### Java.leetcode.TwoSum Solution?
+### main.java.app.leetcode.TwoSum Solution?
 Initial solution and thoughts towards twosum is easy: <i> add numbers, then check</i> - which resulted in teh
 following initial solution 
 ````
@@ -27,7 +27,7 @@ the next iteration:
     }
     return new int[]{};
 ````
-Now, this obviously works as a brute-force method, and solves all the edge cases thrown at it from Java.leetcode's 
+Now, this obviously works as a brute-force method, and solves all the edge cases thrown at it from main.java.app.leetcode's 
 wonderful array of testcases - but the big question is: <i>can it go faster?</i>. So far, the solution is O($n^2$)
 which isn't great, but to be expected when running a loop within a loop. A more optimal solution might be to 
 use HashMaps, where the script (program?) iterates over the given array once and checks if the target integer
@@ -49,7 +49,7 @@ minus the array int exits in the hashmap. If so, a valid pair exist, if not: add
 ````
 This should be slightly faster, hashmap lookups are typically O($1$) on average, making the full solution O($n$) time 
 complexity overall. HashMaps have average-case O($1$) but can degrade to O($n$) in worst case due to hash collisions, 
-though this is rare with good hashing and doesn't typically affect Java’s built-in implementation.
+though this is rare with good hashing and doesn't typically affect java’s built-in implementation.
 
 Implementing this, the solution creates an
 empty hashtable to store elements and their index, then iterating over the array. Then for the "math" or algorithm (rule?)
